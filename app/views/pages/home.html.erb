@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <title>My Project</title>
-    </head>
+  </head>
     
-    <body>
-        <h1 style="text-align: center">My Project on HTML5 Lesson</h1>
-        <h4 style="text-align: center">Few HTML feature from the Lectures</h4>
-    <div style="margin: 40px; font-family: arial">
+  <body>
+    <div class="container">
+        <h1 class="text-center">My Project on HTML5 Lesson</h1>
+        <h4 class="text-center">Few HTML feature from the Lectures</h4>
+    <div  font-family= "arial">
       <p style="text-align: right"><%= link_to 'About Us', about_path %></p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_Cgx8wT7hjw" frameborder="0" allowfullscreen align="right"></iframe>
-        <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Censorshiplolcat.jpg" alt="A cat" height="300"/>
+      <div class="row">
+        <div class="col-md-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_Cgx8wT7hjw" frameborder="0" allowfullscreen ></iframe>
+        </div>
+        <div class="col-md-6"
+          <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Censorshiplolcat.jpg" alt="A cat" height="300" align="right"/>
+        </div>
+       </div> 
         <h3>Brief History</h3>
         <p>Humans have always had a close relationship with cats, and the animals have long been a subject of short films, including the early silent movies <a href="https://en.wikipedia.org/wiki/Boxing_Cats">Boxing Cats</a> (1894)<br />The New York Times described cat images as "that essential building block of the Internet".In addition, 2,594,329 cat images had been manually annotated in flickr.com by users. An interesting phenomenon is that many photograph owners tag their house cats as “tiger". <a href="http://sites.codeschool.org.uk/">Code School Site Creator</a></p>
      </hr />
-        <!-- Unordered List -->
-        <h4>Cat list used in Internet</h4>
+    <!-- Unordered List -->
+    <h4>Cat list used in Internet</h4>
 		<ul>
 			<li><strong>Blackie:</strong> a cat that inherited 15 million British Pounds and thus became the richest cat in history.</li>
 			<li><strong>Colonel Meow:</strong> a Himalayan-Persian mix who became famous on social media websites for his extremely long fur and scowling face.</li>
 			<li><strong>Creme Puff:</strong> the world's oldest cat (1967–2005). Owned by Jake Perry.</li>
 		</ul>        
-        <!-- Ordered List -->
-                <h4>Cat list used In film and television</h4>
+    <!-- Ordered List -->
+    <h4>Cat list used In film and television</h4>
 		<ol>
 			<li><strong>Baggage:</strong> a cat famous for lending its name to the hit British TV show Baggage</li>
 			<li><strong>Jones:</strong>mascot on the USS Nostromo, pet to Sigourney Weaver's Ripley, and survivor in the movie Alien</li>
@@ -35,7 +42,7 @@
 		</ol>
     <hr />
       <h3>The following list of breeds includes domestic cat breeds and domestic × wild hybrids. </h3>
-        <table>        
+        <table class="table">        
           <tr><th>Breed</th><th>Country</th><th>Origin</th><th>Coat / Pattern</th><th>Image</th></tr>
 								          
           <tr><td><a href="https://en.wikipedia.org/wiki/Abyssinian_cat">Abyssinian</a></td><td>Ethiopia</td><td>Natural/Standard</td><td>Short / Ticked</td><td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Gustav_chocolate.jpg/800px-Gustav_chocolate.jpg"height="60" /></td></tr>
@@ -46,12 +53,13 @@
         <h3>Want to learn more on cats on Internet </h3>
 				
         <form action="https://en.wikipedia.org/wiki/Cats_and_the_Internet">
-         <input type="submit" value="Click Here!" />
+         <input type="submit" value="Click Here!" class="btn btn-primary btn-lg" />
         </form>
+    </div>
   </div>
         
    <! footer -->
-      <footer style="text-align: center">
+      <footer class="text-center">
           <small>Thank you for visiting</small>
           <small> &copy; 2017 - M Liaquat Ali </small>
       </footer>

@@ -6,21 +6,29 @@
         
     <title>My Project</title>
   </head>
-    
+  
   <body>
-    <h1 style="text-align: center">About Us</h1>
-    <h4 style="text-align: center">Few HTML feature from the Lectures</h4>
-  <div style="margin: 40px; font-family: arial">
-    <p style="text-align: right"><%= link_to 'Home', root_path %></p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_Cgx8wT7hjw" frameborder="0" allowfullscreen align="right"></iframe>
-      <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Censorshiplolcat.jpg" alt="A cat" height="300"/>
-      <h3>Brief History</h3>
-      <p>Humans have always had a close relationship with cats, and the animals have long been a subject of short films, including the early silent movies <a href="https://en.wikipedia.org/wiki/Boxing_Cats">Boxing Cats</a> (1894)<br />The New York Times described cat images as "that essential building block of the Internet".In addition, 2,594,329 cat images had been manually annotated in flickr.com by users. An interesting phenomenon is that many photograph owners tag their house cats as “tiger". <a href="http://sites.codeschool.org.uk/">Code School Site Creator</a></p>
-   </hr />
+    <div class="container">
+      <h1 class="text-center">About Us</h1>
+      <h4 class="text-center">Few HTML feature from the Lectures</h4>
+      <div style="margin: 40px; font-family: arial">
+        <p style="text-align: right"><%= link_to 'Home', root_path %></p>
+        <div class="row">
+        <div class="col-md-8">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_Cgx8wT7hjw" frameborder="0" allowfullscreen ></iframe>
+        </div>
+        <div class="col-md-4"
+          <p><img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Censorshiplolcat.jpg" alt="A cat" height="300"/>
+        </div>
+       </div>
+        <h3>Brief History</h3>
+        <p>Humans have always had a close relationship with cats, and the animals have long been a subject of short films, including the early silent movies <a href="https://en.wikipedia.org/wiki/Boxing_Cats">Boxing Cats</a> (1894)<br />The New York Times described cat images as "that essential building block of the Internet".In addition, 2,594,329 cat images had been manually annotated in flickr.com by users. An interesting phenomenon is that many photograph owners tag their house cats as “tiger". <a href="http://sites.codeschool.org.uk/">Code School Site Creator</a></p>
+       </hr />
+    </div>
   </div>
         
    <! footer -->
-      <footer style="text-align: center">
+      <footer class="text-center">
           <small>Thank you for visiting</small>
           <small> &copy; 2017 - M Liaquat Ali </small>
       </footer>
