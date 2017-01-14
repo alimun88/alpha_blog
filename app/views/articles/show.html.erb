@@ -5,10 +5,16 @@
         <tr>
           <th>Title</th>
           <th>Description</th>
+          <th>Index</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
         <tr>
           <td><%= @articles.title %></td>
           <td><%= @articles.description %></td>
+          <td><%= link_to 'Index', articles_path, class: 'btn btn-warning btn-lg' %></td>
+          <td><%= link_to 'Edit', edit_article_path, class: 'btn btn-primary btn-lg' %></td>
+          <td><%= link_to 'Delete', @articles, class: 'btn btn-danger btn-lg' %></td>
         </tr>
       </table>
     </div>

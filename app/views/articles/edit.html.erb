@@ -2,17 +2,17 @@
   <div class= "row cover-text">
     
       <% if @articles.errors.any? %>
-      <div class="alert alert-danger" role="alert">
+      <div class="alert alert-danger">
       <h3>The following errors prevented the article from getting created:</h3>
-        <ul class="list-group">
+        <ul>
           <% @articles.errors.full_messages.each do |msg| %>
-            <li class="list-group-item"><%= msg %></li>
+            <li><%= msg %></li>
           <% end %>
         </ul>
       </div>
       <% end %>
     
-    <h1>Create an Article </h1>
+    <h1>Edit an Article </h1>
     <div class= "col-md-4 col-md-offset-4">
         <%= form_for @articles do |f| %>
           <div class="form-group">
