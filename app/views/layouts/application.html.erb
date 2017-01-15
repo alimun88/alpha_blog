@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<nav class="navbar  navbar-inverse">
+<nav class="navbar  navbar-inverse navbar-fixed">
      
    <div class="container">
    <!-- Brand and toggle get grouped for better mobile display -->
@@ -21,8 +21,8 @@
                <span class="icon-bar"></span>             
            </button>
            <ul class="nav navbar-nav ">
-             <li><%= link_to 'AlphaBlog', root_path, class: 'navbar-brand'%> </li>
-             <li><%= link_to 'Create New Article', new_article_path, class: 'btn btn-default' %></li>
+             <li> <%= link_to 'AlphaBlog', root_path, class: 'navbar-brand'%> </li>
+             <li><%= link_to 'List of Articles', articles_path, class: 'btn btn-default' %></li>
            </ul>
       </div>
    
@@ -36,11 +36,9 @@
   </div><!-- /.container -->
 </nav>
 
-<div class= "container">
-  <% flash.each do |name, msg| %>
-    <ul class="list-group">
-      <li class="list-group-item"><%= msg %></li>
-    </ul>
+<div class= "container flash-container">
+  <% flash.each do |type, msg| %>
+    <%= content_tag :div, msg, class: "alert alert-#{type}" %>
   <% end %>
 </div>
 
@@ -49,9 +47,18 @@
 </div>
 
 <! footer -->
-<footer class="nav navbar-footer navbar-fixed text-center">
-  <small>Thank you for visiting</small>
-  <small> &copy; 2017 - M Liaquat Ali </small>
+<footer class="nav navbar-inverse navbar-fixed-bottom">
+  <div class="cover-text">
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+       <li><%= link_to 'About Us', about_path %></li>
+      <li><%= link_to 'List of Articles', articles_path %></li>
+      <li><%= link_to 'Create New Article', new_article_path %></li>
+    </ul>
+    <h5>Thank you for visiting</h5>
+    crafted with &hearts; in calgary by <%= link_to 'Mohammad', http: '//www.guarded-tundra-34404.herokuapp.com/' %>
+    <small> &copy; 2017 - M Liaquat Ali </small>
+  </div>
 </footer>
 
 </body>

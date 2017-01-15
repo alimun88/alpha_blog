@@ -2,13 +2,14 @@
 @import 'bootstrap';
 
 
+
 .cover{
     background: url('https://pquh3q.bn1303.livefilestore.com/y3mRFNM_Hu6ShK1_73zC9nOeDPVstWR2xHEDzije7Yun33WY6rxbic-Hm7zARrmW9mVzXUbEyEtVIeQfKlgjkbA-IXTP5JIUxRxQPmT_ZJ_hayWVBpEwy3PvhQWaRSu4ft1AXCIWw2l1zy4LvzZBK0H_MmLD-LHgykczjNRcyDLl1I?cropmode=none') top left no-repeat;
     background-size: cover;
     display: table;
     width: 100%;
-    margin-top: -20px;
-    padding:5%;
+    margin-top: -42px;
+    padding:10%;
     box-shadow: inset 0 0 100px #000;
     }
 .cover-text {
@@ -16,13 +17,21 @@
     color: white;
     vertical-align: top;
     }
-.cover-table-text {
-    display: table-cell;
-    vertical-align: top;
+.cover-text ul li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 10px;
+    }
+.cover-text ul li a {
+    color: white;
+}
+.flash-container {
+    position: absolute;
+    width: 100%;
     }
 .cover-text h1 {
     margin: 0;
-    font-size: 70px;
+    font-size: 50px;
     letter-spacing: -3px;
     }
 .lead {
