@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
       flash[:success] = "Article updated Successfully"
       redirect_to article_path(@articles)
     else
-      flash[:danger] = @articles.errors.full_messages.join(", ")
+      flash[:notice] 
       render 'edit'
     end
   end
@@ -44,7 +44,7 @@ class ArticlesController < ApplicationController
   def destroy
     @articles.destroy
     
-    flash[:success] = "The Artical was successfully deleted"
+    flash[:danger] = "The Artical was successfully deleted"
     redirect_to articles_path
   end
   

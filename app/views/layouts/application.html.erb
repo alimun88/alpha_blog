@@ -8,58 +8,15 @@
 </head>
 <body>
 
-<nav class="navbar  navbar-inverse navbar-fixed">
-     
-   <div class="container">
-   <!-- Brand and toggle get grouped for better mobile display -->
-   
-       <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>             
-           </button>
-           <ul class="nav navbar-nav ">
-             <li> <%= link_to 'AlphaBlog', root_path, class: 'navbar-brand'%> </li>
-             <li><%= link_to 'List of Articles', articles_path, class: 'btn btn-default' %></li>
-           </ul>
-      </div>
-   
-   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="navbar-collapse">
-   <ul class="nav navbar-nav navbar-right">
-       <li><%= link_to 'Home', root_path %></li>
-       <li><%= link_to 'About Us', about_path %></li>
-   </ul>                   
-  </div><!-- /.navbar-collapse -->
-  </div><!-- /.container -->
-</nav>
+<%= render 'layouts/navigation' %>
 
-<div class= "container flash-container">
-  <% flash.each do |type, msg| %>
-    <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-  <% end %>
-</div>
+<%= render 'layouts/messages' %>
 
 <div class= "container cover">
   <%= yield %>
 </div>
 
-<! footer -->
-<footer class="nav navbar-inverse navbar-fixed-bottom">
-  <div class="cover-text">
-    <ul>
-      <li><%= link_to 'Home', root_path %></li>
-       <li><%= link_to 'About Us', about_path %></li>
-      <li><%= link_to 'List of Articles', articles_path %></li>
-      <li><%= link_to 'Create New Article', new_article_path %></li>
-    </ul>
-    <h5>Thank you for visiting</h5>
-    crafted with &hearts; in calgary by <%= link_to 'Mohammad', http: '//www.guarded-tundra-34404.herokuapp.com/' %>
-    <small> &copy; 2017 - M Liaquat Ali </small>
-  </div>
-</footer>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
