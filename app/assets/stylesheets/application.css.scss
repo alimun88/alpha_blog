@@ -2,6 +2,18 @@
 @import 'bootstrap';
 
 
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+#logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
 
 .cover{
     background: url('https://pquh3q.bn1303.livefilestore.com/y3mRFNM_Hu6ShK1_73zC9nOeDPVstWR2xHEDzije7Yun33WY6rxbic-Hm7zARrmW9mVzXUbEyEtVIeQfKlgjkbA-IXTP5JIUxRxQPmT_ZJ_hayWVBpEwy3PvhQWaRSu4ft1AXCIWw2l1zy4LvzZBK0H_MmLD-LHgykczjNRcyDLl1I?cropmode=none') top left no-repeat;
@@ -33,12 +45,31 @@
     }
 .cover-text h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: -3px;
     }
+    
+.control-label{
+    margin-left: -20px; 
+    
+}
 .lead {
     margin-top: 80px;
 }
+.user-name {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.user-body {
+    border-top: 1px solid #eaeaea;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.body-user {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 
 
 

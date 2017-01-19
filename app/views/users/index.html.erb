@@ -1,0 +1,24 @@
+<div class="cover-text body-user">
+  <h2 >User Listing</h2>
+  <%= link_to "Create new User", signup_path, class: "btn btn-lg btn-info " %>
+</div> 
+<% @users.each do |user| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <div class="user-name">
+        <%= link_to user.username, user_path(user) %>
+        </div>
+          <div class="user-body">
+            <%= user.email %>
+          </div>
+          <div class="article-actions">
+            <%= link_to "Edit this user", edit_user_path(user), class: "btn btn-xs btn-primary" %>
+            <%= link_to "Delete this user", user_path(user), method: :delete,
+            data: { confirm: "Are you sure you want to delete this user?"},
+            class: "btn btn-xs btn-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
