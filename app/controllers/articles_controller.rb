@@ -15,7 +15,6 @@ class ArticlesController < ApplicationController
   end
   
   def create
-   
     # render plain: params[ :article].inspect
     @articles = Article.new(article_params)
     @articles.user = User.last

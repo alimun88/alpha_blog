@@ -1,25 +1,9 @@
-<div class="container">
-    <div class="panel panel-default">
-      <h1 class="text-center">Listing All articles</h1>
-      <p class="text-center"><%= link_to 'Create New Article', new_article_path, class: 'btn btn-success btn-lg' %></p>
-      <table class="table">
-        <tr>
-          <th>Title</th>
-          <th>Description</th>
-          <th></th>
-        </tr>
-        <% @articles.each do |article| %>
-          <tr>
-            <td><%= link_to article.title, article_path(article) %><br>
-            <small>Created by: ,
-                      <%= time_ago_in_words(article.created_at) %> ago,
-                      last updated <%= time_ago_in_words(article.updated_at) %> ago
-            <small></td>
-            <td><%= truncate(article.description, length: 80) %></td>
-            <td><%= link_to 'Edit', edit_article_path(article), class: 'btn btn-primary btn-sm' %>
-              <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm' %></td>
-          </tr>
-        <% end %>
-      </table>
-    </div>
-</div>
+
+  <div class="cover-text">
+    <h2 class="text-center">Listing All articles</h2>
+    <p class="text-center"><%= link_to 'Create New Article', new_article_path, class: 'btn btn-success btn-md' %></p>
+  </div>
+  
+  <%= render 'article', obj: @articles %>
+  
+  

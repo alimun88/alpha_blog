@@ -1,28 +1,27 @@
-<div class="container">
-    <div class="panel panel-default">
-      <div class="panel-header">
-        <h1 class="text-center"><%= @user.username %></h1>
+<div class="panel panel-default">
+  <div class="panel-header">
+    <h1 class="text-center">Welcome to <%= @user.username %>'s page</h1>
+  </div>
+  <div class="panel-body">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 center">
+      <%= gravatar_for( @user, size: 150) %>
       </div>
-      <div class="panel-body">
-        <table class="table">
-          <tr>
-            <th>Email</th>
-          </tr>
-          <tr>
-            <td><%= @user.email %></td>
-          </tr>
-        </table>
+  </div>
+    <h4 class="text-center"> <%= @user.username %>'s articles</h4>
+    <%= render 'articles/article', obj: @user.articles %>
+  </div>  
+
+  <div class="panel-footer">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+          <%= link_to 'Index', users_path, class: 'btn btn-warning btn-md' %>
+          <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary btn-md' %>
+          <%= link_to "Delete this user", user_path(@user), method: :delete,
+          data: { confirm: "Are you sure you want to delete this user?"},
+        class: "btn btn-md btn-danger" %>
       </div>
-      <div class="panel-footer">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4">
-              <%= link_to 'Index', users_path, class: 'btn btn-warning btn-md' %>
-              <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-primary btn-md' %>
-              <%= link_to "Delete this user", user_path(@user), method: :delete,
-              data: { confirm: "Are you sure you want to delete this user?"},
-            class: "btn btn-md btn-danger" %>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div>  
+  </div>
 </div>
+ 
