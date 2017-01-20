@@ -45,7 +45,9 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    builder (3.2.2)
+    bootstrap-will_paginate (0.0.10)
+      will_paginate
+    builder (3.2.3)
     byebug (9.0.6)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
@@ -58,7 +60,7 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.14)
+    ffi (1.9.17)
     font-awesome-sass (4.6.2)
       sass (>= 3.2)
     globalid (0.3.7)
@@ -163,6 +165,7 @@ GEM
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.0.7)
 
 PLATFORMS
   ruby
@@ -170,6 +173,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.10)
   bootstrap-sass (= 3.3.7)
+  bootstrap-will_paginate (= 0.0.10)
   byebug
   coffee-rails (= 4.2.1)
   font-awesome-sass (= 4.6.2)
@@ -189,6 +193,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (= 3.0.0)
   web-console
+  will_paginate (= 3.0.7)
 
 RUBY VERSION
    ruby 2.3.0p0

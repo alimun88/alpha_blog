@@ -3,7 +3,14 @@
     <h2 class="text-center">Listing All articles</h2>
     <p class="text-center"><%= link_to 'Create New Article', new_article_path, class: 'btn btn-success btn-md' %></p>
   </div>
+  <div class="center">
+    <%= will_paginate %>
+  </div>
   
-  <%= render 'article', obj: @articles %>
+    <%= render 'article', obj: @articles %>
+  
+  <div class="center">
+    <%= will_paginate %>
+  </div>
   
   
