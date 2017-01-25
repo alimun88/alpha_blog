@@ -1,25 +1,12 @@
-<html>
-  <body>
-    <div class="container" font-family= "arial">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-        <div class="cover-text">
-            <h1>Welcome to Alpha Blog</h1>
-            <p>You have landed to the perfect place to get all information of your need.</p>
-            <p><%=  link_to 'Learn more', '#', class: 'btn btn-primary btn-lg' %></p>
-        </div> 
+<div class="cover" font-family= "arial">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="cover-text footer-text">
+        <h1>Welcome to Alpha Blog</h1>
+        <div class="form-group">
+          <p><%=  link_to 'Sign Up Now', signup_path, class: 'btn btn-danger btn-lg btn-xlg' %></p>
         </div>
-        <div class="row cover-text">
-        <div class="col-md-6 col-md-offset-3">
-            <p class = "lead">Receive updated emails? Please Sign Up the mailing list.</p>
-          <div class="form-group">
-            <input type="emal" placeholder="emal@example.com" class="form-control">
-          </div>
-          <divclass="form-group">
-            <%=  link_to 'Sign Up', '#', class: 'btn btn-success btn-lg' %>
-          </div>
-          </div>
-        </div>
+      </div> 
     </div>
-  </body>
-</html>
+  </div>
+</div>

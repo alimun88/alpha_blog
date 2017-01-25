@@ -10,31 +10,40 @@
     letter-spacing: -1px;
     font-weight: bold;
 }
+.btn-xlg {
+    font-size: 1.8em ;
+    background-color: black;
+}
 #logo:hover {
     color: #fff;
     text-decoration: none;
 }
 
 .cover{
-    background: url('https://pquh3q.bn1303.livefilestore.com/y3mRFNM_Hu6ShK1_73zC9nOeDPVstWR2xHEDzije7Yun33WY6rxbic-Hm7zARrmW9mVzXUbEyEtVIeQfKlgjkbA-IXTP5JIUxRxQPmT_ZJ_hayWVBpEwy3PvhQWaRSu4ft1AXCIWw2l1zy4LvzZBK0H_MmLD-LHgykczjNRcyDLl1I?cropmode=none') top left no-repeat;
+    # background: url('https://pquh3q.bn1303.livefilestore.com/y3mRFNM_Hu6ShK1_73zC9nOeDPVstWR2xHEDzije7Yun33WY6rxbic-Hm7zARrmW9mVzXUbEyEtVIeQfKlgjkbA-IXTP5JIUxRxQPmT_ZJ_hayWVBpEwy3PvhQWaRSu4ft1AXCIWw2l1zy4LvzZBK0H_MmLD-LHgykczjNRcyDLl1I?cropmode=none') top left;
+    background-image: asset-url('profile_picture.png');
     background-size: cover;
     display: table;
     width: 100%;
-    padding:10%;
+    height: 500px;
     box-shadow: inset 0 0 100px #000;
     }
 .cover-text {
     text-align: center;
-    color: white;
+    margin: 40px;
+    padding: 20px;
     vertical-align: top;
     }
-.cover-text ul li {
+.cover-text-footer {
+    text-align: center;
+}
+.cover-text-footer ul li {
     display: inline-block;
     margin-left: 40px;
     padding-top: 10px;
     }
 .navbar-fixed {
-    margin-bottom: -2px;
+    margin-bottom: -1px;
 }
 .cover-text ul li a {
     color: white;
@@ -44,11 +53,14 @@
     width: 100%;
     }
 .cover-text h1 {
-    margin: 0;
-    font-size: 30px;
-    letter-spacing: -3px;
+    margin-top: 40px;
+    font-size: 50px;
+    letter-spacing: -1px;
     }
-    
+
+.footer-text {
+     color: #fff;
+ }   
 .control-label{
     margin-left: -20px; 
     
