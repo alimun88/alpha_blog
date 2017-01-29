@@ -34,7 +34,9 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
         <div class="form-group">
-          <%=  link_to 'Sign Up', signup_path, class: 'btn btn-danger btn-lg btn-xlg' %>
+          <% if !logged_in? %>
+            <%=  link_to 'Sign Up', signup_path, class: 'btn btn-danger btn-lg btn-xlg' %>
+          <% end  %>
         </div>
       </div>
     </div>
