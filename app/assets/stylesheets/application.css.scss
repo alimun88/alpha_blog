@@ -16,12 +16,42 @@ $navbar-default-bg: black;
   color: #fff;
   text-decoration: none;
   }
+// Nav Styles
+.navbar {
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
+
 .nav-style li{
   color: #fff;
   font-size: 1.1em;
   font-weight: bold;
   font-family: arial, helvetica ;
   
+}
+.badge {
+
+background-color: #CEF6F5;
+
+text-transform: uppercase;
+
+letter-spacing: -1px;
+
+font-weight: bold;
+
+}
+
+.input_checkbox input {
+
+width: auto !important;
+
 }
 
 .center {
