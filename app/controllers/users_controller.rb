@@ -4,6 +4,12 @@ class UsersController < ApplicationController
   before_action :require_same_user, only: [:edit, :update, :destroy]
   before_action :require_admin, only: [:destroy]
   
+  def full_name
+    return "#{first_name} #{last_name}".strip if (first_name || last_name)
+    "Anonymous"
+  end
+
+  
   def index
     @users = User.paginate(page: params[:page], per_page: 5)
   end
@@ -50,7 +56,7 @@ class UsersController < ApplicationController
   
   private
   def user_params
-    params.require(:user).permit(:username, :email, :password)
+    params.require(:user).permit(:username, :first_name, :last_name, :email, :password)
   end
   
   def set_user

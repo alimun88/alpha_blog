@@ -23,7 +23,7 @@
           Articles
         <% end %></li>
         <li><%= link_to users_path do %> 
-          <span class="glyphicon glyphicon-user"></span> 
+          <i class="fa fa-users"></i> 
           Users
         <% end %></li>
         <% if logged_in? %>
@@ -51,6 +51,10 @@
       </form>
       <ul class="nav navbar-nav navbar-right nav-style">
       <% if logged_in? %>
+        <li><%= link_to user_path(current_user) do %>
+          <i class="fa fa-user"></i>
+          Welcome <%= current_user.full_name.present? ? current_user.full_name : current_user.email %></li>
+        <% end %>
           <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>  Your Profile <%= "(Admin)" if current_user.admin? %><span class="caret"></span></a>
           <ul class="dropdown-menu">
