@@ -32,9 +32,10 @@ gem 'bootstrap-will_paginate', '0.0.10'
 
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass', '3.3.7'
-
+gem 'bootstrap-social-rails'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
+gem 'font-awesome-rails'
 
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
